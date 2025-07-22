@@ -1,0 +1,111 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+  }
+  to {  }
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  animation: var(--slide);
+}
+
+.todo-button {
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 4px;
+  background-color: transparent;
+  border-color: var(--primary);
+  border-style: solid;
+  border-radius: 5px;
+  color: var(--primary);
+  animation: var(--slide);
+  transition-duration: 300ms;
+}
+.todo-button:hover {
+  scale: 1.05;
+  border-color: var(--primary-dark);
+  color: var(--primary-dark);
+}
+
+.input-modal {
+  padding: 12px 6px 12px 6px;
+  background-color: var(--primary-half);
+  border-width: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 0px 40px 0px;
+  width: 50%;
+  height: fit-content;
+  color: white;
+  border-radius: 7px;
+  backdrop-filter: blur(7px) contrast(90%) brightness(80%);
+
+}
+
+.close-modal {
+  animation: go-out 0.9s ease-in forwards;
+}
+
+@keyframes go-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+#todo-title {
+  width: 70%;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 5px;
+  outline: none;
+}
+
+#todo-desc {
+  width: 70%;
+  background: transparent;
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px 5px;
+  outline: none;
+  resize: none;
+}
+
+.confirm-button {
+  color: white;
+  background: transparent;
+  border-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  width: 25%;
+  border-style: solid;
+  cursor:pointer;
+  transition-duration: 300ms;
+}
+.confirm-button:hover {
+  scale: 1.2
+}
+
+.priority-dropbox {
+  width: 40%;
+  color: white;
+}
+

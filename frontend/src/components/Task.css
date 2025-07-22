@@ -1,0 +1,24 @@
+.task {
+  background-color: rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 30%;
+  min-width: 15%;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 300ms;
+  cursor: pointer;
+  gap: auto;
+}
+
+.task:hover{
+  scale: 0.98;
+}
+
+.task-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+}
+

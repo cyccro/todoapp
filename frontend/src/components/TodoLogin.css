@@ -1,0 +1,48 @@
+
+.login-modal {
+  background-color: var(--primary-half);
+  border-width: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 0px 40px 0px;
+  width: 25%;
+  height: 60%;
+  color: white;
+  border-radius: 7px;
+  backdrop-filter: blur(7px) contrast(90%) brightness(80%);
+
+}
+
+.login-input {
+  background-color: transparent;
+  border-color: var(--primary);
+  padding: 8px;
+  color: white;
+  outline: none;
+  border-style: solid;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.switch-btn {
+  background-color: transparent;
+  color: cyan;
+  border-width: 0;
+  transition-duration: 300ms;
+  cursor: pointer;
+  padding-left: 3px;
+}
+.switch-btn:hover {
+  color: #0341fc;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
+}
